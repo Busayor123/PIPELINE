@@ -22,8 +22,16 @@ sudo systemctl enable jenkins
 sudo yum install git-y
 
 
-#INSTALL Kubectl
 
+#INSTALL TERRAFORM
+
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
+
+
+
+#INSTALL Kubectl
 
 sudo curl -LO https://dl.k8s.io/release/v1.29.2/bin/linux/amd64/kubectl
 sudo chmod +x kubectl

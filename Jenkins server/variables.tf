@@ -11,8 +11,8 @@ variable "public_subnets" {
 
 }
 
-variable "private_subnets" {
-  description = "private subnets"
-  type        = list(string)
+# variable "private_subnets" {
+#   description = "private subnets"
+#   type        = list(string)
 
-}
+# }
